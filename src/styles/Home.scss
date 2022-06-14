@@ -1,0 +1,67 @@
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.sbcontainer {
+    margin-top: 1%;
+    width: auto;
+    margin-left: 50px;
+  }
+
+
+
+.countryList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+
+.menuItem {
+    border-radius: 35px;
+    width: 300px;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    place-items: center;
+    
+  }
+
+  .menuItem:hover {
+    box-shadow: 0px 3px 15px rgba(219, 205, 78, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+
+  .menuItem h1,
+.menuItem p {
+  margin-left: 5px;
+  padding: 0.5em;
+}
+
+.menuItem h2,
+.menuItem p {
+  
+  padding-left: 10%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}
